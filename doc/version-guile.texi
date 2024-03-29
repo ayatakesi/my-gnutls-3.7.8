@@ -1,0 +1,4 @@
+@set UPDATED 27 September 2022
+@set UPDATED-MONTH September 2022
+@set EDITION 3.7.8
+@set VERSION 3.7.8
