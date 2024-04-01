@@ -1,3 +1,34 @@
+# gnutls
+GNU Emacs30.0.50に含まれる`java/INSTALL`にしたがって取得したgnutlsモジュールのレポジトリ。
+
+# 作成した手順
+1. [Android ports for GNU Emacsのソース書庫](https://sourceforge.net/projects/android-ports-for-gnu-emacs/files/gnutls-3.7.8-emacs.tar.gz)を取得して展開
+
+```bash
+$: wget https://sourceforge.net/projects/android-ports-for-gnu-emacs/files/gnutls-3.7.8-emacs.tar.gz
+$: tar xvfz gnutls-3.7.8-emacs.tar.gz
+```
+
+2. gitレポジトリとして初期化し修正用ブランチ`my/master`をcheckout
+
+```bash
+$: cd gnutls-3.7.8
+$: git init
+$: git checkout -b my/master
+```
+
+3. 空レポジトリにpush
+
+```bash
+$: gh repo create my-gnutls-3.7.8 --public
+$: git remote add mine https://github.com/JIBUN/my-gnutls-3.7.8
+$: git branch -M my/master
+$: git push -u mine my/master
+```
+
+以上。
+ここから以下は元ソースの`README.md`
+
 This directory tree holds a modified copy of GnuTLS.  The
 modifications made allow it to be built using the Emacs version of the
 Android ``ndk-build'' system, in order to build a version of Emacs's
